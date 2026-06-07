@@ -1,65 +1,86 @@
+import React from "react";
+import Navbar from "./components/Navbar";
 import Image from "next/image";
+import Link from "next/link";
+import { SendHorizontal } from "lucide-react";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { SiLinkedin } from "react-icons/si";
+import Divider from "./components/Divider";
 
-export default function Home() {
+function Page() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <section>
+      <Navbar />
+
+      <section className="mt-12 md:mt-20 space-y-6 md:space-y-8">
+        {/* Hero */}
+        <div className="flex gap-5 items-center sm:gap-8">
+          <div className="relative h-23 w-23 overflow-hidden rounded-xl md:h-34.25 md:w-34.25">
+            <Image
+              src="/giphy.gif"
+              alt="Anuj Belsare"
+              fill
+              priority
+              className="object-cover"
+              sizes="137px"
+            />
+          </div>
+
+          <div>
+            <h1 className="text-3xl leading-[0.95] sm:text-4xl md:text-5xl">
+              Hi there 👋
+              <br />
+              I&apos;m{" "}
+              <em className="underline decoration-wavy underline-offset-4">
+                Anuj Belsare
+              </em>
+            </h1>
+          </div>
+        </div>
+
+        {/* Intro */}
+        <div className="max-w-xl">
+          <p className="text-base leading-tight tracking-[-0.02em] text-neutral-300 md:text-lg">
+            I build high-performance web experiences that feel effortless to
+            use, combining thoughtful design, scalable architecture, and
+            meticulous attention to detail—from backend systems to
+            pixel-perfect interfaces.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        {/* Actions */}
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#FFEA59] px-4 py-2 font-medium text-[#161616] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#fce130]"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <SendHorizontal size={18} />
+            Get in Touch
+          </Link>
+
+          <div className="flex items-center gap-5">
+            <Link
+              href="https://github.com/yourusername"
+              target="_blank"
+              className="text-neutral-400 transition-colors hover:text-white"
+            >
+              <SiGithub size={24} />
+            </Link>
+
+            <Link
+              href="https://linkedin.com/in/anuj-belsare"
+              target="_blank"
+              className="text-neutral-400 transition-colors hover:text-white"
+            >
+              <SiLinkedin size={24} />
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <Divider />
+    </section>
   );
 }
+
+export default Page;
