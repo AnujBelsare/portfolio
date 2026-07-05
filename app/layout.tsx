@@ -122,7 +122,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${dmMono.variable} ${instrumentSerif.variable}`}
     >
       <body className="min-h-screen">
-        <main className="mx-auto max-w-lg px-2">
+        <main className="mx-auto max-w-lg px-4 pb-12 sm:px-6 md:pb-16">
           {children}
         </main>
       </body>

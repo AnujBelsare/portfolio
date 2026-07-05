@@ -34,3 +34,25 @@ pre,
 .monof {
   font-family: var(--font-mono);
 }
+
+@layer components {
+  .section-label {
+    @apply text-xs font-mono uppercase tracking-wider text-[#ffdf2aae] sm:text-sm;
+  }
+
+  .section-title {
+    @apply text-3xl font-light leading-[0.95] sm:text-4xl md:text-5xl;
+  }
+
+  .section-header {
+    @apply mb-8 md:mb-10;
+  }
+
+  .section-header .section-title {
+    @apply mt-2 sm:mt-2.5;
+  }
+
+  .section-body {
+    @apply text-sm font-light leading-relaxed text-neutral-400 sm:text-base;
+  }
+}
