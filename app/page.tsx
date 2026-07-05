@@ -4,7 +4,7 @@ import Divider from "./components/Divider";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-import Link from "next/link";
+import Education from "./components/Education";
 import Footer from "./components/Footer";
 
 function Page() {
@@ -19,6 +19,9 @@ function Page() {
       <Divider />
 
       <Work />
+      <Divider />
+
+      <Education />
       <Divider />
 
       <Footer />

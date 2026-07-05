@@ -16,7 +16,7 @@ function Footer() {
 
       <p className="px-2 text-center text-base font-light leading-relaxed tracking-[-0.02em] text-neutral-400 sm:px-4 md:text-lg">
         Open to full-time roles, freelance projects, and
-        interesting collaborations. Drop a message — I usually respond within a day.
+        interesting collaborations. Drop a message I usually respond within a day.
       </p>
 
       <div className="mt-6 flex items-center justify-center sm:mt-8">
