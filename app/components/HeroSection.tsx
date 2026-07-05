@@ -26,7 +26,7 @@ function HeroSection() {
               Hi there 👋
               <br />
               I&apos;m{" "}
-              <em className="underline decoration-wavy underline-offset-4">
+              <em className="">
                 Anuj Belsare
               </em>
             </h1>
@@ -38,13 +38,13 @@ function HeroSection() {
           <p className="text-base font-light leading-relaxed tracking-[-0.02em] text-neutral-400 md:text-lg">
             I build high-performance web experiences that feel effortless to
             use, combining thoughtful design, scalable architecture, and
-            meticulous attention to detail—from backend systems to
+            meticulous attention to detail from backend systems to
             pixel-perfect interfaces.
           </p>
         </div>
 
         {/* Actions */}
-        <div className="flex flex-col items-start gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+        <div className="flex gap-4 flex-row sm:flex-wrap items-center justify-between">
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-lg bg-[#FFEA59] px-4 py-2 font-medium text-[#161616] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#fce130]"
