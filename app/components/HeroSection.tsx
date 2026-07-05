@@ -12,7 +12,7 @@ function HeroSection() {
         <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
           <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl sm:h-23 sm:w-23 md:h-34.25 md:w-34.25">
             <Image
-              src="/giphy.gif"
+              src="/pic.webp"
               alt="Anuj Belsare"
               fill
               priority
