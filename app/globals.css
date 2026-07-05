@@ -14,10 +14,20 @@
   --font-mono: var(--font-mono);
 }
 
+html {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
 body {
+  height: 100%;
+  overflow-y: auto;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  overscroll-behavior: none;
+  overscroll-behavior-y: none;
 }
 
 h1,

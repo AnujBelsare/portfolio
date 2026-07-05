@@ -4,7 +4,8 @@ import Divider from "./components/Divider";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
-
+import Link from "next/link";
+import Footer from "./components/Footer";
 
 function Page() {
   return (
@@ -18,6 +19,9 @@ function Page() {
       <Divider />
 
       <Work />
+      <Divider />
+
+      <Footer />
     </section>
   );
 }

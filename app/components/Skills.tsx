@@ -33,7 +33,7 @@ function Skills() {
                 {skills.map((s, index) => (
                     <div
                         key={index}
-                        className="rounded-xl border border-[#444] bg-[#222] px-3 py-1.5 text-sm text-white sm:px-4 sm:py-2"
+                        className="rounded-lg border border-[#444] bg-[#222] px-3 py-1.5 text-sm text-white sm:px-4 sm:py-2"
                     >
                         {s.name}
                     </div>

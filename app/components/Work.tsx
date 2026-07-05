@@ -73,8 +73,6 @@ function Work() {
                 ))}
             </div>
 
-            <Divider />
-
         </section>
     )
 }
