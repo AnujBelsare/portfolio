@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Divider from "./components/Divider";
 import HeroSection from "./components/HeroSection";
@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function Page() {
   return (
-    <section>
+    <div>
       <Navbar />
 
       <HeroSection />
@@ -30,7 +30,7 @@ function Page() {
       <Divider />
 
       <Footer />
-    </section>
+    </div>
   );
 }
 

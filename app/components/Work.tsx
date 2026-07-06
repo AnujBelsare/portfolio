@@ -1,5 +1,4 @@
 import React from 'react'
-import Divider from './Divider'
 
 function Work() {
     // Demo data matching image_2a7f3b.png

@@ -4,14 +4,14 @@ const skills = [
   { name: "JavaScript" },
   { name: "TypeScript" },
   { name: "C" },
-  { name: "HTML 5" },
-  { name: "Css" },
+  { name: "HTML5" },
+  { name: "CSS" },
   { name: "Tailwind CSS" },
-  { name: "NodeJs" },
-  { name: "ReactJs" },
-  { name: "NextJs" },
-  { name: "ExpressJS" },
-  { name: "PostMan" },
+  { name: "Node.js" },
+  { name: "React.js" },
+  { name: "Next.js" },
+  { name: "Express.js" },
+  { name: "Postman" },
   { name: "Git" }
 ];
 

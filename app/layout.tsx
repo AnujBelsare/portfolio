@@ -121,7 +121,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${dmSans.variable} ${dmMono.variable} ${instrumentSerif.variable}`}
     >
-      <body className="min-h-screen">
+      <body className="min-h-screen" suppressHydrationWarning>
         <main className="mx-auto max-w-lg px-4 sm:px-6">
           {children}
         </main>
