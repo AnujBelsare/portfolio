@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "Anuj Belsare — Full Stack Web Developer",
+    default: "Anuj Belsare",
     template: "%s | Anuj Belsare",
   },
 
@@ -139,7 +139,7 @@ export default function RootLayout({
                 "Supabase",
               ],
               sameAs: [
-                "https://github.com/AnujBelsareno",
+                "https://github.com/AnujBelsare",
                 "https://linkedin.com/in/anuj-belsare",
               ],
             }),
