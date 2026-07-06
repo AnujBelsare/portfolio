@@ -37,7 +37,7 @@ const projects: Project[] = [
       "Developed a comprehensive hotel management platform that streamlined restaurant operations through QR-based digital menus, live order tracking, and dedicated kitchen dashboards. Built a responsive React frontend backed by a Node.js and Express API, with Supabase handling data management and Cloudinary powering media storage. The system improved order accuracy, reduced manual coordination, and delivered a seamless experience for both staff and customers.",
     skills: ["React.js", "Node.js", "Express.js", "Supabase", "Cloudinary"],
     image: "/projects/hotelM.webp",
-    projectLink: "https://example.com",
+    // projectLink: "https://example.com",
   },
 
   {
@@ -68,6 +68,7 @@ const projects: Project[] = [
       "Designed and developed a modern web presence for Kota Rankers, a coaching institute based in Warud. The platform was built to improve online visibility, showcase academic programs, highlight achievements, and simplify student inquiries. Emphasis was placed on responsive design, clear information architecture, and an intuitive user experience that helps parents and students quickly access essential information.",
     skills: ["React.js", "Next.js", "Tailwind CSS", "Responsive Design"],
     image: "/projects/kotarankers.webp",
+    projectLink: "https://kotarankers.in"
   },
 
   {
@@ -81,6 +82,7 @@ const projects: Project[] = [
       "Built a professional marketing website for MediaFXI, a digital marketing and content management agency. The platform was designed to effectively present the agency's services, portfolio, client success stories, and brand identity. Special attention was given to visual storytelling, modern UI design, and conversion-focused layouts that help generate leads and establish credibility.",
     skills: ["Next.js", "React.js", "Tailwind CSS", "UI/UX Design"],
     image: "/projects/mediafxi.webp",
+    projectLink: "https://mediafxi.in"
   },
 
   {
@@ -94,10 +96,11 @@ const projects: Project[] = [
       "Developed an AI-assisted web generation platform that enables users to create websites by simply filling out structured forms. The system leverages intelligent workflows to convert business requirements into functional website layouts, reducing development time and simplifying the website creation process for non-technical users. The project explored practical applications of AI agents in modern web development.",
     skills: ["AI Agents", "React.js", "Node.js", "LLMs", "Automation"],
     image: "/projects/codzyai.webp",
+    projectLink: "https://codzy-agent.vercel.app/"
   },
 
   {
-    title: "Aqua Human",
+    title: "Aqua Humanizer",
     context: "Independent Project",
     date: "Ongoing",
     category: "AI Product",
@@ -107,6 +110,7 @@ const projects: Project[] = [
       "Currently developing an AI-powered text humanization tool that transforms machine-generated content into more natural, engaging, and human-like writing. The project focuses on enhancing readability, tone consistency, and content quality while experimenting with advanced prompt engineering and language processing techniques. Development is ongoing with continuous improvements being made to output quality and user experience.",
     skills: ["AI", "NLP", "Prompt Engineering", "React.js"],
     image: "/projects/aqua-human.webp",
+    projectLink: "https://aqua-humanizer.aquilastudios.in/"
   },
 
   {
@@ -126,6 +130,7 @@ const projects: Project[] = [
       "UI/UX Design",
     ],
     image: "/projects/redesigned.webp",
+    projectLink: "https://web-studio-orcin.vercel.app/"
   },
 ];
 
