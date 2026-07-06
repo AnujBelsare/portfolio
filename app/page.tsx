@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Divider from "./components/Divider";
 import HeroSection from "./components/HeroSection";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Education from "./components/Education";
+import ProjectShowcase from "./components/ProjectShowcase";
 import Footer from "./components/Footer";
 
 function Page() {
@@ -21,6 +24,8 @@ function Page() {
       <Work />
       <Divider />
 
+      <ProjectShowcase />
+      <Divider />
       <Education />
       <Divider />
 
