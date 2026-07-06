@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="w-full pt-4 sm:pt-6">
       <div className="flex items-center justify-between gap-4">
-        <Link href="/" className="text-xl sm:text-2xl">Anuj Belsare</Link>
+        <Link href="/" className="text-xl sm:text-2xl font-serif">Anuj Belsare</Link>
 
         <a
           href="/Anuj_Belsare_CV.pdf"
