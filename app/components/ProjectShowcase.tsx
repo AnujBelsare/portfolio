@@ -276,8 +276,9 @@ export default function ProjectShowcase() {
                   src={project.image}
                   alt={project.title}
                   fill
+                  loading="lazy"
                   className="object-cover opacity-80"
-                  sizes="(max-width: 640px) 100vw, 672px"
+                  sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, 672px"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#1c1c1c] via-[#1c1c1c]/10 to-transparent" />
               </div>
