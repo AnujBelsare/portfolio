@@ -67,7 +67,7 @@ function HeroSection() {
 
         <div className="flex items-center gap-5">
           <Link
-            href="https://github.com/AnujBelsareno"
+            href="https://github.com/AnujBelsare"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub profile"
