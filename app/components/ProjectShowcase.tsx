@@ -228,7 +228,7 @@ export default function ProjectShowcase() {
             gsap.set(card, {
               scale: 1 - p * 0.08,
               rotation: buryRotation * p,
-              opacity: 1 - p * 0.35,
+              // opacity: 1 - p * 0.35,
               transformOrigin: "center bottom",
             });
           },
