@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import { SendHorizontal } from "lucide-react";
+import { Home } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 
 function LinkedInIcon({ size = 24 }: { size?: number }) {
@@ -17,30 +16,25 @@ function LinkedInIcon({ size = 24 }: { size?: number }) {
   );
 }
 
-function HeroSection() {
+export const metadata = {
+  title: "Page not found",
+};
+
+export default function NotFound() {
   return (
-    <section className="mt-8 space-y-6 sm:mt-10 md:mt-16 md:space-y-8">
+    <section className="flex min-h-[80vh] flex-col justify-center space-y-6 py-8 md:space-y-8">
       {/* Hero */}
       <div className="flex items-center gap-4 sm:gap-6 md:gap-8">
-        <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl sm:h-23 sm:w-23 md:h-34.25 md:w-34.25">
-          <Image
-            src="/giphy.gif"
-            alt="Anuj Belsare"
-            fill
-            priority
-            className="object-cover"
-            sizes="137px"
-          />
+        <div className="relative flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#FFEA59]/15 bg-[#FFEA59]/6 sm:h-23 sm:w-23 md:h-34.25 md:w-34.25">
+          <span className="font-serif text-3xl italic text-[#FFEA59] sm:text-4xl md:text-5xl">
+            404
+          </span>
         </div>
-
         <div>
           <h1 className="section-title">
-            Hi there 👋
+            Well, this is awkward 👀
             <br />
-            I&apos;m{" "}
-            <em className="">
-              Anuj Belsare
-            </em>
+            This page doesn&apos;t <em>exist</em>
           </h1>
         </div>
       </div>
@@ -48,23 +42,30 @@ function HeroSection() {
       {/* Intro */}
       <div className="max-w-xl">
         <p className="text-base font-light leading-relaxed tracking-[-0.02em] text-neutral-400 md:text-lg">
-          I build high-performance web experiences that feel effortless to
-          use, combining thoughtful design, scalable architecture, and
-          meticulous attention to detail from backend systems to
-          pixel-perfect interfaces.
+          The route you&apos;re looking for got refactored out of existence,
+          redirected into the void, or never made it past the planning
+          stage. Either way, there&apos;s nothing to render here.
         </p>
       </div>
 
+      {/* Terminal */}
+      <div className="max-w-md rounded-lg border border-white/10 bg-white/3 p-4 font-mono text-xs sm:text-sm">
+        <p className="text-neutral-500">
+          $ curl -I anujbelsare.online/this-page
+        </p>
+        <p className="mt-1 text-white">HTTP/1.1 404 Not Found</p>
+        <p className="mt-1 text-[#ffdf2aae]">// this page ghosted you</p>
+      </div>
+
       {/* Actions */}
-      <div className="flex gap-4 flex-row sm:flex-wrap items-center justify-between">
+      <div className="flex flex-row items-center justify-between gap-4 sm:flex-wrap">
         <Link
-          href="/contact"
+          href="/"
           className="inline-flex items-center gap-2 rounded-lg bg-[#FFEA59] px-4 py-2 font-medium text-[#161616] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#fce130]"
         >
-          <SendHorizontal size={18} />
-          Get in Touch
+          <Home size={18} />
+          Take Me Home
         </Link>
-
         <div className="flex items-center gap-5">
           <Link
             href="https://github.com/AnujBelsare"
@@ -75,7 +76,6 @@ function HeroSection() {
           >
             <SiGithub size={24} />
           </Link>
-
           <Link
             href="https://linkedin.com/in/anuj-belsare"
             target="_blank"
@@ -90,5 +90,3 @@ function HeroSection() {
     </section>
   );
 }
-
-export default HeroSection;
